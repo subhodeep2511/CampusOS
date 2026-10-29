@@ -47,37 +47,3 @@ CampusOS/
 ├── PROJECT_REPORT_NOTES.md # Report outline and viva prompts
 └── README.md               # Setup and usage
 ```
-
-## Demo data and persistence
-
-The first launch loads fictional sample records from `defaultData()` in `app.js`. User changes are saved as JSON in browser `localStorage` under `campusos-demo-v1`. Export downloads the current data; Reset demo restores the seeded records.
-
-## Important limitations
-
-This is a single-user client-side prototype, not a production university information system. It has no backend, real login, server-side authorization, multi-user synchronization, or official institutional data. Browser storage is not appropriate for confidential student records. The performance comparison in the overview is explicitly illustrative, not a measured class average. Academic insights use simple visible rules; they are not validated predictions and should not be treated as automated academic decisions.
-
-## Suggested viva topics
-
-- Semantic HTML, form labels, and DOM manipulation
-- CSS Grid, Flexbox, responsive media queries, and design tokens
-- Event listeners and event delegation
-- JSON serialization and `localStorage`
-- Attendance and assessment calculations
-- Interval overlap detection for timetable conflicts
-- Input validation and why client-side validation is not a security boundary
-- Accessibility, keyboard navigation, and meaningful data visualization
-- How to evolve the prototype into a secure API-backed application
-
-## Research-informed design choices
-
-The layout prioritizes important metrics before detailed records, keeps chart labels and units clear, uses consistent status cues, and includes responsive and accessibility considerations. See the project report notes and architecture document for the implementation rationale and limitations.
-
-Further reading:
-
-- Government Analysis Function, [Data visualisation: testing dashboards for design and accessibility](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-testing-dashboards-for-design-and-accessibility/)
-- MDN, [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
-- OWASP, [HTML5 Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html)
-
-## Recommended next milestone
-
-Add a backend API and relational database, then implement real authentication, server-side role-based authorization, audit logging, automated tests, and a deployment pipeline. Do not process real student records until security and institutional requirements have been addressed.
